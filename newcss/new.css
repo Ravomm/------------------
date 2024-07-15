@@ -1,0 +1,337 @@
+
+/* ---------- ********** ОБЩИЕ ********** ----------*/
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.hidds {
+    transition: opacity 0.7s;
+}
+
+
+
+
+
+
+
+/* ---------- ********** WEB-HEADER ********** ----------*/
+
+
+/* .navbar-main.main {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+.container-navigation.main {
+    padding-top: 4px;
+    padding-bottom: 4px;
+} */
+
+
+
+
+.logo-link.main {
+    width: 100%;
+}
+
+
+
+
+.header--nav__MOB_MENU {
+    padding-left: 5vw;
+    width: 100%;
+    max-height: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    position: absolute;
+    top: 56px;
+    left: 0;
+
+    background-color: hsl(0, 0%, 7%);
+    transition: max-height 0.8s;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .header--nav__MOB_MENU {
+        gap: 40px;
+    }
+}
+.ADD__header--nav__MOB_MENU__VISIBLE {
+    max-height: 500px;
+}
+@media screen and (min-width: 768px) {
+    .ADD__header--nav__MOB_MENU__VISIBLE {
+        max-height: 1000px;
+    }
+}
+.ADD__header--nav__MOB_MENU_WHITE {
+    color: hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+.header--a__MOB_MENU {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.ADD__header--a__MOB_MENU__WHITE {
+    color: hsl(0, 0%, 7%);
+}
+
+
+
+
+.header--a__MOB_MENU:first-child {
+    margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+    .header--a__MOB_MENU:first-child {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+.header--a__MOB_MENU:last-child {
+    margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+    .header--a__MOB_MENU:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* ---------- ********** СЕКЦИЯ HERO ********** ----------*/
+
+
+.web-hero-container__img img {
+    pointer-events: none;
+}
+
+
+
+
+.hero--div__CONTAINER1,
+.hero--div__CONTAINER2 {
+    width: 100%;
+    overflow: visible;
+}
+@media screen and (min-width: 992px) {
+    .hero--div__CONTAINER1,
+    .hero--div__CONTAINER2 {
+        overflow: hidden;
+    }
+}
+/* @media screen and (min-width: 1900px) {
+    .hero--div__CONTAINER1,
+    .hero--div__CONTAINER2 {
+        overflow: visible;
+    }
+} */
+
+
+
+
+.hero--div__CONTAINER1 {
+    margin-top: 64px;
+}
+@media screen and (min-width: 480px) {
+    .hero--div__CONTAINER1 {
+        margin-top: 80px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hero--div__CONTAINER1 {
+        margin-top: 120px;
+    }
+}
+
+
+
+.hero--div__CONTAINER2 {
+    margin-top: 16px;
+}
+@media screen and (min-width: 992px) {
+    .hero--div__CONTAINER2 {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+.hero--div__BLOCK {
+    width: 200%;
+    display: flex;
+    gap: 16px;
+}
+@media screen and (min-width: 992px) {
+    .hero--div__BLOCK {
+        gap: 34px;
+    }
+}
+
+
+
+
+.hero--div__GROUP {
+    display: flex;
+    gap: 16px;
+    white-space: nowrap;
+}
+@media screen and (min-width: 992px) {
+    .hero--div__GROUP {
+        gap: 34px;
+    }
+}
+
+
+
+
+.hero--div__ITEM {
+    padding: 16px 44px;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 8%);
+    border-radius: 24px;
+}
+@media screen and (min-width: 992px) {
+    .hero--div__ITEM {
+        font-size: 34px;
+        line-height: 140%;
+    }
+}
+
+
+
+
+
+
+
+/* ---------- ********** СЕКЦИЯ WEARE ********** ----------*/
+
+
+.weare--div__HIDDEN {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+
+
+
+
+
+/* ---------- ********** СЕКЦИЯ WHITE ********** ----------*/
+
+
+.horizontal-container._800vh {
+    height: 400vh;
+}
+
+
+
+
+.white--a__ALL {
+    background-image: linear-gradient(hsl(0, 100%, 60%), hsl(0, 100%, 45%));
+}
+
+
+
+
+.__add--white--a__BLACK {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 7%) !important;
+}
+
+
+
+
+
+
+
+/* ---------- ********** СЕКЦИЯ HORIZONTAL SCROLL BLOCK ********** ----------*/
+
+
+.horizontal-container._300vh {
+    height: 400vh;
+}
+
+
+
+
+
+
+
+/* ---------- ********** СЕКЦИЯ FAQ ********** ---------- */
+
+
+.accordion-item-content {
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+.__add--accordion-item-content {
+    max-height: 500px;
+}
+@media screen and (min-width: 500px) {
+    .__add--accordion-item-content {
+        max-height: 300px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .__add--accordion-item-content {
+        max-height: 200px;
+    }
+}
+
+
+
+
+.pointer-item.second {
+    transition: transform 0.5s;
+}
+.__add--pointer-item {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .w-checkbox-input .w-checkbox-input--inputType-custom .checkbox-input
+
+.w--redirected-checked
+
+.w--redirected-focus */
